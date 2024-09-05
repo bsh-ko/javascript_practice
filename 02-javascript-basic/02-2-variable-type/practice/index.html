@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9/5 간단 한 줄 일기 예제 만들어보기</title>
+  <style>
+    body, h1, button {
+      margin: 0; padding: 0;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 50px;
+    }
+
+    .postBox {
+      margin: 10px 50px;
+      min-height: 300px;
+      border: solid 5px rgb(181, 181, 181);
+      text-align: left;
+    }
+
+    button {
+      margin: 20px 0;
+      width: 80px;
+      height: 30px;
+      font-size : 15px;
+    }
+  </style>
+</head>
+<!-- 한줄일기 쓰기 예제 간단히 만들어보기 -->
+<body>
+  <h1>오늘의 한줄 일기</h1>
+  <div class="postBox">
+    <ul id="result"></ul>
+  </div>
+  <button onclick="writeDiary()">한줄 일기</button>
+  <button onclick="deleteDiary()">삭제</button>
+  <script src="main.js"></script>
+</body>
+</html>
