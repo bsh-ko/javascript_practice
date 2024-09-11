@@ -32,3 +32,17 @@ console.log('``````````````')
 myFun3()    //arg1 : undefined, arg2 : 0
 myFun3(10)    //arg1 : 10, arg2 : 0
 myFun3(10, 20)    //arg1 : 10, arg2 : 20
+
+// rest parameter
+function myFun4(arg1, ...arg2) {
+    console.log(arg1)
+    //rest parameter는 배열
+    if(arg2.length > 0) {
+        for(let i = 0; i < arg2.length; i++) {
+            console(`arg2[${i}] = ${arg2[i]}`)
+        }
+    }
+}
+
+myFun4(10, 20)  //arg2[0] = 20
+myFun4(10, 20, 30, 40, 50)
