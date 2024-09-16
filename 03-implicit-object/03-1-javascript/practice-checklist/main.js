@@ -22,13 +22,14 @@ function addList() {
 }
 
 function deleteList() {
-    let checked = document.querySelectorAll('.todo-checkbox')
-    checked.forEach(c => {
-        if(c.checked) {
-            let index = c.getAttribute('data-index')
-            todoArray.splice(index, 1)
+    // 체크된 항목들만 삭제 (뒤에서부터 삭제)
+    let checkboxes = document.querySelectorAll('.todo-checkbox')
+    for (let i = checkboxes.length - 1; i >= 0; i--) {
+        if (checkboxes[i].checked) {
+            let index = checkboxes[i].getAttribute('data-index')
+            todoArray.splice(index, 1)  // 해당 인덱스에서 항목 제거
         }
-    })
+    }
     // 삭제 후 다시 리스트를 출력
     printResult(todoArray)
 }
