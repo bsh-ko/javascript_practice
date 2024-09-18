@@ -1,4 +1,4 @@
-h1 {
+#header {
     text-align: center;
     margin: 50px;
 }
@@ -8,6 +8,13 @@ h1 {
     min-height: 500px;
 }
 
-input {
-    text-align: center;
+#section {
+    display: flex;
+    gap: 20px;
+}
+
+#section #todoList_result {
+    min-width: 500px;
+    min-height: 500px;
+    border: 1px solid black;
 }

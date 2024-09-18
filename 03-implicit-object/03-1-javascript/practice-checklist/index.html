@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>오늘의 할 일</h1>
-    <input type="text" id="todoList"><br>
-    <button onclick="addList()" class="add">추가</button>
-    <button onclick="deleteList()" class="delete">삭제</button>
-    <div id="todoList_result"></div>
+    <header id="header">
+        <h1>오늘의 할 일은?</h1>
+        <input type="text" id="todoList"><br>
+        <button onclick="addList()" class="add">추가</button>
+        <button onclick="deleteList()" class="delete">삭제</button>
+        
+    </header>
+    <section id="section">
+        <div id="todoList_result"></div>
+    </section>
+    <footer id="footer">
+        
+    </footer>
 
     <script src="main.js"></script>
 </body>
