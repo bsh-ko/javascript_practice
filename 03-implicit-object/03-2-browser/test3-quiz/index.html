@@ -1,0 +1,26 @@
+<!-- 회원가입 페이지 -->
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <script>
+        function goAddress() {
+            window.open('address.html', '_blank', 'left=100, top=100, width=500, height=500')
+        }
+
+        function printAddr(addr) {
+            let resultNode = document.getElementById('result')
+            resultNode.innerHTML = addr
+        }
+        
+    </script>
+ </head>
+
+ <body>
+    <h1>회원가입 페이지</h1>    
+    <button onclick="goAddress()">주소입력</button>
+    <div id="result"></div>
+ </body>
+ </html>

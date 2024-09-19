@@ -1,0 +1,28 @@
+<!-- 주소 입력을 위한 child 페이지 -->
+<!-- 입력이 없으면 alert 띄우기 -->
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주소입력</title>
+ </head>
+ <body>
+    <h1>주소</h1>
+    <input type="text" id="address" />
+    <button onclick="check()">입력</button>
+    <script>
+        function check() {
+            let addr = document.getElementById('address').value
+            if(addr == null || addr.trim().length == 0){
+                console.log('NULL')
+                alert('주소를 입력해야합니다.')
+            } else {
+                opener.printAddr(addr)
+                console.log(`주소 : ${addr}`)
+                window.close()
+            }
+        }
+    </script>
+ </body>
+ </html>
