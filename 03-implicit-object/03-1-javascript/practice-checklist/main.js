@@ -9,11 +9,15 @@ let resultNode = document.getElementById('todoList_result')
 function printResult(array) {
     let result = ''
     array.forEach((value, index) => {
-        result += `<div id='checkbox-layout'>
-        <input type='checkbox' class='todo-checkbox' data-index='${index}'/> ${value}
+        result += `<div id='checkbox-layout' onclick='goMemo()'>
+        <li class='todo-checkbox' data-index='${index}'> ${value} </li>
         </div>`
     })
     resultNode.innerHTML = result
+}
+
+function goMemo() {
+    window.open('memo.html', '_blank', 'left=100, top=100, width=500, height=500')
 }
 
 function addList() {
