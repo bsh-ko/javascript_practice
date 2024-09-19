@@ -9,7 +9,9 @@ let resultNode = document.getElementById('todoList_result')
 function printResult(array) {
     let result = ''
     array.forEach((value, index) => {
-        result += `<input type='checkbox' class='todo-checkbox' data-index='${index}'/> ${value} <br />`
+        result += `<div id='checkbox-layout'>
+        <input type='checkbox' class='todo-checkbox' data-index='${index}'/> ${value}
+        </div>`
     })
     resultNode.innerHTML = result
 }
