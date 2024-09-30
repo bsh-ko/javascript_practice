@@ -106,3 +106,4 @@ myArray.push('white')
 console.log(myArray.shift())  //orange
 console.log(myArray.pop())  //white
 console.log(myArray)  /** 0:"yellow" 1:"green" 2:"black"*/
+
