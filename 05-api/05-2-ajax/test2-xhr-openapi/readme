@@ -1,0 +1,6 @@
+너무 많은 open api가 있음
+서울시 공공데이터
+open api를 제공하는 벤더의 사이트에 가서 이용 방법 확인
+==> key, url, 요청 시 넘겨야 하는 데이터, 결과 데이터 형식 ..
+
+//http://openAPI.seoul.go.kr:8088/594c4d735773756e3336646f556379/json/RealtimeCityAir/1/99/
